@@ -3,7 +3,7 @@ const cors = require('cors');
 const RecipesDAO = require('./DAO/RecipesDAO');
 const app = express();
 
-const dbPath = '/home/mikolajmichalczyk/Documents/recipeApp/recipeApp.db';
+const dbPath = '../recipeApp.db';
 const recipesDAO = new RecipesDAO(dbPath);
 
 app.use(cors());
